@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign</title>
+
+    <!-- start google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- end google fonts -->
+
+    <!-- start font awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- end font awesome -->
+
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+
+</head>
+
+<body>
+
+
+    <div class="page">
+        <div class="page-sign-box min-h-screen xy-center py-12">
+            <div class="container">
+                <p class="welcome text-3xl text-center font-bold capitalize hidden">welcome to shopyCart store </p>
+                <div class="sign capitalize text-center transition-all duration-1000">
+                    <h1 class="mb-2">join us now
+                    </h1>
+                    <p class="text-lg mb-9">swipe to switch between sign in and up
+                        <span>
+                            <i class="fa-solid fa-arrow-right fa-fade"></i>
+                        </span>
+                    </p>
+                    <div class="swiper max-w-[720px] ">
+                        <div class="swiper-wrapper">
+                            <div class="sign-in swiper-slide  p-4 rounded-tl-3xl  border-2 border-black shadow-md">
+                                <form action="">
+                                    <h2 class=" text-center mb-6">sign in</h2>
+                                    <div class=" relative bg-gray-400 border-2 border-black rounded-md mb-4">
+                                        <input type="text" name="emailIn" id="emailIn"
+                                            class="w-full px-2 py-1 rounded-md focus:outline-none">
+                                        <label for="emailIn"
+                                            class="absolute top-0 start-4 translate-y-[-50%] bg-white px-3">email</label>
+                                    </div>
+                                    <div class=" relative bg-gray-400 border-2 border-black rounded-md mb-4">
+                                        <input type="password" name="passwordIn" id="passwordIn"
+                                            class="w-full px-2 py-1 rounded-md focus:outline-none">
+                                        <label for="passwordIn"
+                                            class="absolute top-0 start-4 translate-y-[-50%] bg-white px-3">password</label>
+                                    </div>
+                                    <button type="submit" class="  text-black px-4 py-1 capitalize rounded-md border-2 border-black block mx-auto hover:bg-black hover:text-white transition-colors ">
+                                        sign in
+                                    </button>
+                                </form>
+                                <div class="check-user bg-red-500 text-white mb-6 px-2 py-1 rounded-md mt-6">
+                                    this user is not found
+                                </div>
+                            </div>
+                            <div class="sign-up swiper-slide  p-4 rounded-md border-2 border-black shadow-md">
+                                <form action="">
+                                    <h2 class=" text-center mb-6">sign up</h2>
+                                    <div class=" relative bg-gray-400 border-2 border-black rounded-md mb-4">
+                                        <input type="text" name="username" id="username"
+                                            class="w-full px-2 py-1 rounded-md focus:outline-none">
+                                        <label for="username" class="absolute top-0 start-4 translate-y-[-50%] bg-white px-3">username</label>
+                                    </div>
+                                    <div class="alertUp text-start bg-red-500 text-white mb-6 px-2 py-1 rounded-md hidden"></div>
+    
+                                    <div class=" relative bg-gray-400 border-2 border-black rounded-md mb-4">
+                                        <input type="text" name="emailUp" id="emailUp"
+                                            class="w-full px-2 py-1 rounded-md focus:outline-none">
+                                        <label for="emailUp"
+                                            class="absolute top-0 start-4 translate-y-[-50%] bg-white px-3">email</label>
+                                    </div>
+                                    <div class="alertUp text-start bg-red-500 text-white mb-6 px-2 py-1 rounded-md hidden"></div>
+    
+                                    <div class=" relative bg-gray-400 border-2 border-black rounded-md mb-4">
+                                        <input type="password" name="passwordUp" id="passwordUp"
+                                            class="w-full px-2 py-1 rounded-md focus:outline-none">
+                                        <label for="passwordUp"
+                                            class="absolute top-0 start-4 translate-y-[-50%] bg-white px-3">password</label>
+                                    </div>
+                                    <div class="alertUp text-start bg-red-500 text-white mb-6 px-2 py-1 rounded-md hidden"></div>
+    
+                                    <div class=" relative bg-gray-400 border-2 border-black rounded-md mb-4">
+                                        <input type="password" name="repasswordUp" id="repasswordUp"
+                                            class="w-full px-2 py-1 rounded-md focus:outline-none">
+                                        <label for="repasswordUp"
+                                            class="absolute top-0 start-4 translate-y-[-50%] bg-white px-3">repassword</label>
+                                    </div>
+                                    <div class="alertUp text-start bg-red-500 text-white mb-6 px-2 py-1 rounded-md hidden"></div>
+    
+                                    <button type="submit"
+                                        class="  text-black px-4 py-1 capitalize rounded-md border-2 border-black block mx-auto hover:bg-black hover:text-white transition-colors ">sign
+                                        up</button>
+                                </form>
+                                <div class="check-user bg-red-500 text-white mb-6 px-2 py-1 rounded-md mt-6">
+                                    this user is already exist
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <div class="swiper-button-next hidden"></div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="up fixed right-3 bottom-3 size-12 bg-black text-white z-[9999] rounded-full xy-center shadow-md shadow-gray-500 border-2 border-gray-400 cursor-pointer hover:scale-125 duration-300 opacity-0 pointer-events-none ">
+            <i class="fa-solid fa-up-long"></i>
+        </span>
+    </div>
+
+
+    <script src="../js/all.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            effect: 'flip',
+            loop: true,
+            grabCursor: true,
+            mousewheel: {
+                enabled : true, 
+                forceToAxis : true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
