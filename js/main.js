@@ -18,10 +18,14 @@ const cartRow = document.querySelector(' .cart .row');
 const up = document.querySelector('span.up');
 //---------------------------------------------------------------------------------------------------------------------------
 
+const repoName = 'Web-Masters-Internship-week3-Task1';
+
 if (window.location.pathname !== '/src/sign.html' && localStorage.getItem('token') == null)
-    window.location = window.location.origin + '/src/sign.html';
+    window.location = window.location.origin + `${repoName}/src/sign.html`;
 else if (home)
     userName.innerHTML = `Hello, ${JSON.parse(localStorage.getItem('token')).user} &#128075;`;
+
+console.log(window.location);
 
 
 let users;
