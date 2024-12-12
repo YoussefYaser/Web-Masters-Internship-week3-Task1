@@ -18,7 +18,8 @@ const cartRow = document.querySelector(' .cart .row');
 const up = document.querySelector('span.up');
 //---------------------------------------------------------------------------------------------------------------------------
 
-const repoName = 'Web-Masters-Internship-week3-Task1';
+// const repoName = 'Web-Masters-Internship-week3-Task1';
+const repoName = '';
 
 console.log(window.location.origin + `/${repoName}/src/sign.html`);
 if (window.location.pathname !== `/${repoName}/src/sign.html` && localStorage.getItem('token') == null)
