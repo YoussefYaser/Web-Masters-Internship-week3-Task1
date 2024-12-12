@@ -217,7 +217,7 @@ if (home) {
 
         setTimeout(() => {
             document.body.style.setProperty('overflow', 'visible');
-            window.location = window.location.origin + '/src/sign.html';
+            window.location = window.location.origin + `/${repoName}/src/sign.html`;
         }, 300);
     })
     //------------------------------------------------------------------------------------------------------------------------
